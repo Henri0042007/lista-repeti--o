@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
-
+    let mult =[];
+    let soma = 0;
 
     //PROCESSAMENTO
+    for (let contador = 0; contador <= 100; contador++) {
+        if(contador / 3 == Math.ceil(contador / 3)){
+            mult.push(contador);
+            soma += contador;
+        }
+    }
 
 
     //SAÍDA
+    document.write(`Os mult de tres são: ${mult.join(", ")}. E a soma dos numeros é ${soma}`)
 
 </script>
